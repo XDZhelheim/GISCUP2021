@@ -1,0 +1,18 @@
+link arrival status 测试集没有，需要 prediction
+0 未知，应该指的是特别通畅？是不是 0 和 1 的 time 差不多
+
+根据这个结果再预测时间
+
+合并 link，下游路段只有 1 个的情况可以直接合
+
+看一下手机滴滴关于堵车的一些指标
+
+滴滴的交通报告，找一下有没有给 status
+
+link id 的处理：合并，embedding
+l1-l2-l3 当成一个句子做 word2vec
+
+order id 是怎么编码的
+
+slice_id=191 的时候，order_cnt 突然下降，distance_avg 也是
+slice_id 是从早 8 点开始编码的? 东八区?
