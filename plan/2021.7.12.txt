@@ -1,0 +1,14 @@
+2021.7.12
+
+学习率 0.1 左右
+depth，num of leaves
+
+ata 取个 log
+RMSE
+
+取训练样本：不能完全随机
+5 折 kfold
+
+特征选择
+
+调参 gird search
