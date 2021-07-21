@@ -1,0 +1,2 @@
+link_time_attr 根据 min，max 得到长度的聚类
+大概估算长度
