@@ -1,0 +1,8 @@
+driver id 相关的加特征，把 head 相关的东西都搞进去
+driver_id--slice_id 聚类：一个司机在一个 slice 接多少单，分成不同种类的司机
+
+OD 信息
+O：在这个 link 出发的车有几辆
+o=groupby("order_id").first().value_counts()
+d=groupby("order_id").last().value_counts()
+path["o_cnt"]=path.first()[].map(o)

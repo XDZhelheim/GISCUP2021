@@ -2,6 +2,7 @@ import pandas as pd
 from tqdm import tqdm
 import numpy as np
 import time
+import scipy.stats as st
 
 start=time.time()
 
@@ -32,10 +33,10 @@ for i,fn in enumerate(TRAIN_FILES):
             else:
                 roads[lid] = [link_time]
 
-df=pd.DataFrame(columns=["std", "avg", "min", "max", "count"])
+df=pd.DataFrame(columns=["std", "avg", "min", "max", "count", "skew", "kurt"])
 
 for key, value in roads.items():
-    df.loc[key]=[np.std(value), np.mean(value), np.min(value), np.max(value), len(value)]
+    df.loc[key]=[np.std(value), np.mean(value), np.min(value), np.max(value), len(value), st.skew(value), st.kurtosis(value)]
 
 df.to_csv("./link_time_attr.csv")
 
