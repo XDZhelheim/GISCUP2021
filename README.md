@@ -5,5 +5,5 @@ Final Rank: 13
 
 ## Co-authors
 
-- Quanjun Chen (chchj0416@gmail.com)
-- Yu Mo (11710815@mail.sustech.edu.cn)
+- Quanjun Chen @quanjunc (chchj0416@gmail.com)
+- Yu Mo @IcarusMomo (11710815@mail.sustech.edu.cn)
